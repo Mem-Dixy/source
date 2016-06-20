@@ -1,6 +1,8 @@
 namespace keyboard {
 	static public class keyboarding {
-
+		static private System.Collections.Generic.Queue<System.UInt64> onkeydown;
+		static private System.Collections.Generic.Queue<System.UInt64> onkeypress;
+		static private System.Collections.Generic.Queue<System.UInt64> onkeyup;
 		static System.Boolean caps_lock = false;
 		static System.Boolean numlock = true;
 		static public System.UInt64 type () {
